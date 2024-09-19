@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out this survey to help us improve our services.</p>
+
+            <form id="survey-form">
+                <label for="name" id="name-label">Name:
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </label>
+
+                <label for="email" id="email-label">Email:
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </label>
+
+                <label for="number" id="number-label">Age:
+                    <input type="number" id="number" name="number" min="1" max="120" placeholder="Your Age" required>
+                </label>
+
+                <label for="dropdown">Which option best describes your current role?
+                    <select id="dropdown" name="role" required>
+                        <option value="">Select...</option>
+                        <option value="student">Student</option>
+                        <option value="employed">Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+
+                <fieldset>
+                    <legend>What is your level of satisfaction with our service?</legend>
+                    <label>
+                        <input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="neutral"> Neutral
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="very-dissatisfied"> Very Dissatisfied
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What are your preferred methods of communication?</legend>
+                    <label>
+                        <input type="checkbox" name="communication" value="email"> Email
+                    </label>
+                    <label>
+                        <input type="checkbox" name="communication" value="phone"> Phone
+                    </label>
+                    <label>
+                        <input type="checkbox" name="communication" value="mail"> Mail
+                    </label>
+                </fieldset>
+
+                <label for="comments">Additional Comments:
+                    <textarea id="comments" name="comments" rows="4" placeholder="Your comments"></textarea>
+                </label>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

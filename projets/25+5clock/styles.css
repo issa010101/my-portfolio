@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+}
+
+h1 {
+  color: #333;
+  margin: 0;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+#session-label, #break-label {
+  margin-bottom: 20px;
+}
+
+#session-label h2, #break-label h2 {
+  color: #333;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+#session-length, #break-length {
+  font-size: 2em;
+  color: #007BFF;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#timer-label {
+  margin: 20px 0;
+}
+
+#timer-label h2 {
+  color: #333;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#time-left {
+  font-size: 3em;
+  color: #FF5733;
+}
+
+#controls {
+  margin: 20px 0;
+}
+
+#controls button {
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#controls button:hover {
+  background-color: #218838;
+}
+
+#controls #reset {
+  background-color: #dc3545;
+}
+
+#controls #reset:hover {
+  background-color: #c82333;
+}
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.controls, .timer {
+  margin: 20px 0;
+}
+
+.time-setting {
+  margin: 10px 0;
+}
+
+#session-length, #break-length {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+button {
+  font-size: 1.2rem;
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.timer {
+  font-size: 3rem;
+}
+
+#time-left {
+  font-size: 4rem;
+  margin: 10px 0;
+}

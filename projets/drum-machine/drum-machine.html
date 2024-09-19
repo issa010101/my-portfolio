@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Drum Machine</h1>
+        
+        <div class="drum-machine">
+            <div class="drum-pad" id="pad1">
+                <button class="pad-button" data-sound="sounds/clap.mp3">Clap</button>
+            </div>
+            <div class="drum-pad" id="pad2">
+                <button class="pad-button" data-sound="sounds/hihat.mp3">Hi-Hat</button>
+            </div>
+            <div class="drum-pad" id="pad3">
+                <button class="pad-button" data-sound="sounds/kick.mp3">Kick</button>
+            </div>
+            <div class="drum-pad" id="pad4">
+                <button class="pad-button" data-sound="sounds/openhat.mp3">Open Hat</button>
+            </div>
+            <div class="drum-pad" id="pad5">
+                <button class="pad-button" data-sound="sounds/boom.mp3">Boom</button>
+            </div>
+            <div class="drum-pad" id="pad6">
+                <button class="pad-button" data-sound="sounds/ride.mp3">Ride</button>
+            </div>
+            <div class="drum-pad" id="pad7">
+                <button class="pad-button" data-sound="sounds/snare.mp3">Snare</button>
+            </div>
+            <div class="drum-pad" id="pad8">
+                <button class="pad-button" data-sound="sounds/tink.mp3">Tink</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+        
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

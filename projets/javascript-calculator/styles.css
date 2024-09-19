@@ -1,0 +1,119 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.display {
+    background: #222;
+    color: #fff;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: right;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-ac {
+    background: #ff3b30;
+    color: #fff;
+}
+
+.btn-sign {
+    background: #ff9500;
+    color: #fff;
+}
+
+.btn-percent {
+    background: #ffcc00;
+    color: #fff;
+}
+
+.btn-op {
+    background: #007aff;
+    color: #fff;
+}
+
+.btn-num {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.btn-zero {
+    grid-column: span 2;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.btn-dot {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.btn-equal {
+    background: #34c759;
+    color: #fff;
+    grid-column: span 2;
+}
+/* styles.css footer */
+
+footer {
+    background: #f3eeee;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.signature {
+    font-size: 1rem;
+    margin: 0;
+    color: #34c759;
+}
+
+.context {
+    font-size: 0.875rem;
+    margin: 0;
+    color: #ddd;
+}
